@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("Multi-Touch Attribution Modelling Dashboard")
 
 df = pd.read_csv(
-    r"C:\Users\sridh\OneDrive\Desktop\resume_Da projects\ga_sessions.csv",
+    "C:/Users/sridh/OneDrive/Desktop/resume_Da projects/ga_sessions.csv",
     low_memory=False
 )
 if uploaded_file:
