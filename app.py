@@ -10,11 +10,10 @@ st.set_page_config(
 
 st.title("Multi-Touch Attribution Modelling Dashboard")
 
-uploaded_file = st.file_uploader(
-    "Upload Google Analytics CSV",
-    type=["csv"]
+df = pd.read_csv(
+    "C:\Users\sridh\OneDrive\Desktop\resume_Da projects\ga_sessions.csv",
+    low_memory=False
 )
-
 if uploaded_file:
 
     df = pd.read_csv(
