@@ -10,10 +10,10 @@ st.set_page_config(
 
 st.title("Multi-Touch Attribution Modelling Dashboard")
 
-df = pd.read_csv(
-    "ga_sessions.csv",
-    low_memory=False
-)
+import os
+
+file_path = os.path.join("data", "ga_sessions.csv")
+df = pd.read_csv(file_path, low_memory=False)
 if uploaded_file:
 
     df = pd.read_csv(
